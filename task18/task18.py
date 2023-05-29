@@ -10,10 +10,16 @@
 # -> 5
 
 n = int(input('Введите количество чисел: '))
+b = [int(i) for i in input("Введите числа: ").split()]
+x = int(input("Число поиска: "))
 count = 0
-x = [int(i) for i in input("Введите числа: ").split()]
-b = int(input("Число поиска: "))
-for i in range(n):
-    if x[i] == b:
-        count +=1   
-print("Ближайшее число: ",count)
+min = abs(x - b[0])
+for i in range(1, n):
+    element = abs(x - b[i])
+    if element < min:
+        min = element
+        count = i   
+print(f"Ближайшее число: {b[count]}")
+
+
+

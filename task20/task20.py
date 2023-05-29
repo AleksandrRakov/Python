@@ -13,16 +13,6 @@
 # ;     12
 
 
-# ; data = "АВЕИНОРСТ"
-# ; data_1 = "ДКЛМПУ" 
-# ; data_2 = "БГЁЬЯ"
-# ; data_3 = "ЙЫ"
-# ; data_4 = "ЖЗХЦЧ"
-# ; data_5 = "ШЭЮ"
-# ; data_6 = "ФЩЪ"
-
-# ; word = input('Введите слово: ').upper()
-
 
 data = {1:"AEIOULNSTRАВЕИНОРСТ",
         2:"DGДКЛМПУ",
@@ -39,3 +29,4 @@ for i in word:
         if i in v:
             sum += k
 print(f"Стоимость слова: {sum}")
+
