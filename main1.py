@@ -229,4 +229,10 @@
 
 #Совари
 
-
+def sum(n):
+    summa =0
+    for i in range(1,n):
+        print(i)
+        summa +=i
+    print(summa)
+sum(6)
