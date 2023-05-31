@@ -229,10 +229,54 @@
 
 #Совари
 
-def sum(n):
-    summa =0
-    for i in range(1,n):
-        print(i)
-        summa +=i
-    print(summa)
-sum(6)
+# def sum(n):
+#     summa =0
+#     for i in range(1,n + 1):
+#         summa +=i
+#     return summa
+    
+# a = sum(5)
+# print(a)
+
+
+
+# def sum_str(*args):
+#     res = " "
+#     for i in args:
+#         res += i
+#     return res
+
+# print(sum_str("q", "e", "l"))
+
+# print(sum_str(1, 8, 9)) ????????---надо решить
+
+
+import modul         #еще можно импортировать все функции через " from modul imppor * "
+                            # можно еще укорочить имя прописав " import modul as m" 
+print(modul.max_1(10,9))
+
+
+
+
+# def fib(n):
+#     if n in [1,2]:
+#         return 1
+#     return fib(n-1)+fib(n-2)
+
+# list_1 = []
+# for i in range(1,10):
+#     list_1.append(fib(i))
+# print(*list_1)
+    
+
+
+
+def quick_sort(array):
+    if len(array) <= 1:
+        return array
+    else:
+        pav = array[0]
+    less = [i for i in array[1:] if i <= pav]
+    gre = [i for i in array[1:] if i > pav]
+    return quick_sort(less) + [pav] + quick_sort(gre)
+print(*quick_sort([14,5,9,6,24,36,12,55,7]))
