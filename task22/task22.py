@@ -19,6 +19,7 @@ list_2 = [randint(0,50) for i in range(m)]
 print(*list_1)
 print(*list_2)
 result = [int(num) for num in list_1 if num in list_2]
+result.sort()
 if result == []:
     print("Повторяющихся чисел нет. ")
 else:

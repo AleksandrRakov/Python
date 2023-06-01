@@ -14,3 +14,24 @@
 
 # 4 -> 1 2 3 4
 # 9
+
+
+from random import randint
+n = int(input("введите количество кустов: "))
+list_1 = list(int(input("номер куста :")) for i in range(n))
+result = []
+i = 0
+sum = 0
+while (i < n):
+    if (i == n - 1):
+        sum = list_1[i] + list_1[i - 1] + list_1[0]
+    else:
+        sum = list_1[i] + list_1[i - 1] + list_1[i + 1]
+        result.append(sum)
+    i += 1
+result.sort()
+b = result[-1]
+print("максимального числа ягод: ", b)
+
+
+
