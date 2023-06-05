@@ -16,7 +16,7 @@
 # 9
 
 
-from random import randint
+#from random import randint
 n = int(input("введите количество кустов: "))
 list_1 = list(int(input("номер куста :")) for i in range(n))
 result = []
